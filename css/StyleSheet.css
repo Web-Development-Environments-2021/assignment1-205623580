@@ -1,22 +1,29 @@
 
 body{
-padding: 50px;
-margin: 0px;
-background-size: cover;
-background-position: center;
+background-image: url(../star.jpg);
+background-attachment: fixed;
 }
 
 h1{
     text-align: center;
-    color: black;
+    color: white;
     text-transform: uppercase;
     transition: all 4s ease-in-out;
     padding: 20px;
     margin: 20px;
+    display: flex;
 }
+h1::before, h1::after{
+content: "";
+flex: 1 1;
+border-bottom: 5px solid;
+margin: 20px;
+}
+
 h2{
     margin-bottom: -18px;
     text-align: center;
+    color: white;
 }
 
 form{
@@ -70,33 +77,64 @@ table{
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    position: relative;
     }
 
-.topnavbar{
+.topnavbar {
     position: fixed;
-    color: white;
+    color: black ;
     top: 0;
     left: 0;
     right: 0;
     height: 5%;
-    background: #009879;
+    background:white;
     left: 0;
     right: 0;
 }
-.topnavbar:hover{background: #007d65 ;}
+
+.topnavbar a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 30px;
+    overflow:auto ;
+}
+
+.gallery{
+    margin: 50px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 400px;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+   size: 2%;
+   
+}
+
 .topnav{
     display: flex;
     align-items: center;
-    color: #fff;
+    color:black;
     padding: 12px;
     font-weight: bold;
     font-size: 0.85rem;
 
 }
 
-#about:hover{
-    background: chartreuse;
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+li{
+    float: left;
+}
+li:hover{
+    background: rgb(137, 141, 141) ;
 }
 
 
